@@ -1,0 +1,32 @@
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+footer{
+    margin-top:auto;
+    position:relative;
+    bottom:-40px;
+    background-color:darkslategray;
+    text-align:center;
+    line-height: 25px;;
+    font-family: 'Solway', serif;
+}
+
+footer p{
+    letter-spacing:2px;
+}
+
+footer ul{
+    color:white;
+    letter-spacing:2px;
+}
+
+#email{
+    font-size:13px;
+}
+
+footer a:hover{
+    border:none;
+    color:indianred;
+}

@@ -1,0 +1,197 @@
+
+html{
+    background-color: darkslategrey;
+    padding-top:10px;
+}
+
+*{
+    padding:0;
+    margin:0;
+    text-decoration:none;
+    list-style:none;
+}
+
+body{
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+nav{
+    height:80px;
+    width:85%;
+    background-color:rgb(0, 0, 0);
+    border:2px solid white;
+    border-radius:20px;
+    margin:auto;
+  }
+
+label.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:white;
+    padding: 0 100px;
+    line-height:80px;
+}
+
+.links{
+    float:right;
+    margin-right:40px;
+}
+
+nav li{
+    display:inline-block;
+    margin: 0 8px;
+    line-height:80px;
+}
+
+nav a {
+    color:white;
+    font-size:18px;
+    border:1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+
+ a:hover{
+    border:1px solid white;
+    transition: .5s;
+}
+
+
+.rpslogo{
+    width:75px;
+    float:left;
+   border-radius:20px;
+}
+
+.rpslogoSmallLeft{
+    width:50px;
+    float: left;
+    position:relative;
+    bottom:-15px;
+    left:15px;
+}
+
+.rpslogoSmallRight{
+    width:50px;
+    float:right;
+    position:relative;
+    bottom:-15px;
+    left:-15px;
+}
+
+@media(max-width:1484px){
+    .rpslogo{
+        display:none;
+    }
+}
+
+@media(max-width:1484px){
+    .links{
+        display:none;
+    }
+}
+
+@media(max-width:1484px){
+    .logo{
+        display:none;
+        
+    }
+}
+
+label{
+    animation-name: fadeIn;
+    animation-duration:2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes spacing {
+    from {word-spacing: 5px;}
+    to {word-spacing: 20px;}
+}
+
+header{
+    animation-name: colorChange2;
+    animation-duration: 5s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+}
+
+@keyframes colorChange2{
+    from{color:black}
+    to{color:white};
+}
+
+.rpslogoSmallLeft{
+    animation-name:fadeIn;
+    animation-duration:3s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+}
+
+.rpslogoSmallRight{
+    animation-name:fadeIn;
+    animation-duration:3s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+}
+
+.linksSmall{
+    animation-name:fadeIn;
+    animation-duration:3s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+}
+
+@keyframes fadeIn{
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+
+.links{
+    animation-name:fadeIn;
+    animation-duration:2s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+}
+
+ .logoSmall{
+    font-size:30px;
+    color:white;
+    text-align:center;
+    position:relative;
+    bottom:-15px;
+}
+.logoSmall{display:none;}
+  
+@media (max-width:1484px){
+    .logoSmall{display:block;}
+  }
+
+  .linksSmall{display:none;}
+
+  @media (max-width:1484px){
+    .linksSmall{display:block;}
+  }
+    .linksSmall{
+    font-size:10px;
+    text-align:center;
+  }
+
+  .linksSmall  a:hover{
+    border:1px solid white;
+    transition: .5s;
+}
+.rpslogoSmallLeft{display:none;}
+
+@media (max-width:1484px){
+    .rpslogoSmallLeft{display:block;}
+}
+
+.rpslogoSmallRight{display:none;}
+
+@media (max-width:1484px){
+    .rpslogoSmallRight{display:block;}
+}
+

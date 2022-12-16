@@ -1,0 +1,180 @@
+.flex-container{
+    animation-name:introduce;
+    animation-duration:1s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+}
+
+.welcomeBanner,.mobileWelcome{
+    border:3px solid black;
+    border-radius:30px;
+    background-color:white;
+    text-align:center;
+    font-family: 'Solway', serif;
+    font-size:20px;
+    letter-spacing:3px;
+    position:absolute;
+    box-shadow: 2px 5px 10px;
+}
+.welcomeBanner{
+    width:300px;
+    height:50px;
+    right:40%;
+    top:2%;
+}
+.mobileWelcome{
+    width:250px;
+    height:35px;
+    top:4%;
+    left:12%;
+}
+
+@media(max-width:567px){
+    .welcomeBanner{display:none;}
+}
+
+@media(min-width:567px){
+    .mobileWelcome{display:none;}
+}
+.introTitle{
+    border:3px solid black;
+    padding-left: 2.5px;
+    padding-right:2,5px;
+    padding-top:5px;
+    border-radius:15px;
+    box-shadow:5px 5px;
+    background-color:white;
+    word-spacing:2px;
+    font-family: 'Solway', serif;
+    width: 310px;
+    height:50px;
+    position:absolute;
+    text-align:center;
+    left:3.7%;
+    top:14%
+    
+}
+@media(max-width:1648px){
+    .introTitle{display:none;}
+    .introText{display:none;}
+    
+}
+
+@media(max-width:783px){
+    .introTitle{display:block;}
+    .introText{display:block;}
+}
+
+.introText{
+    border:3px solid black;
+    padding:15px;
+    border-radius:20px;
+    box-shadow:5px 5px;
+    font-family: 'Solway', serif;
+    line-height:30px;
+    background-color:white;
+    word-spacing:2px;
+    width: 300px;
+    height:400px;
+    position:absolute;
+    text-align:center;
+    left:3%;
+    top:25%;
+    
+}
+
+.introText a:hover {
+    border:none;
+    color:indianred;
+}
+
+.introText a:link, a:visited{
+    color:orange;
+    
+
+}
+
+.sidebar{
+    width:130px;
+    position:absolute;
+    right:10%;
+    top:20%;
+}
+
+#rockSlider{
+    opacity:0;
+    width:100px;
+    animation:symbolFade;
+    animation-duration:2s;
+    animation-delay:0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+}
+
+@media(max-width:1354px){
+    .sidebar{display:none;}
+}
+
+@media(max-width:783px){
+    .sidebar{display:block;}
+}
+
+@media(max-width:587px){
+    .sidebar{display:none;}
+}
+
+#paperSlider{
+    width:110px;
+    opacity:0;
+    animation:symbolFade;
+    animation-duration:2s;
+    animation-delay: 1s;;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+    
+}
+
+#scissorSlider{
+    width:110px;
+    opacity:0;
+    animation:symbolFade;
+    animation-duration:2s;
+    animation-delay: 1.5s;;
+    display:flex;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes symbolFade{
+    0%{opacity:0;}
+    100%{opacity:1};
+}
+
+@keyframes introduce{
+    0%{bottom:0px; opacity:50%;}
+    100%{bottom:-32px;}
+}
+
+.mobileFoot{
+    border:3px solid black;
+    padding:15px;
+    border-radius:20px;
+    box-shadow:5px 5px;
+    font-family: 'Solway', serif;
+    font-size:12px;
+    line-height:20px;
+    background-color:white;
+    word-spacing:2px;
+    width: 250px;
+    height:50px;
+    position:absolute;
+    text-align:center;
+    bottom:2%;
+    left:7%;
+}
+
+@media(min-width:569px){
+    .mobileFoot{display:none;}
+}

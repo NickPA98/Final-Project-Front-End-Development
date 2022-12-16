@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="header.css">
+<link rel ="stylesheet" href="footer.css">
+<link rel="stylesheet" href="play.css">
+<link rel="stylesheet" href="startpage.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/35519e0007.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kenia&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Solway:wght@500&display=swap" rel="stylesheet">
+<audio id="win" src="Win.mp3"></audio>
+<audio id="lose" src ="Lose.mp3"></audio>
+<audio id="tie" src ="TieSound.mp3"></audio>
+
+
+
+
+<title>Rock | Paper | Scissors</title>
+    <div class = head>
+        <nav>
+            <label class="logo">Rock | Paper | Scissors</label>
+                <img class="rpslogoSmallLeft" src="rps.jpg" alt ="RPS logo">
+                    <img class="rpslogoSmallRight" src="rps.jpg" alt ="RPS logo">
+        
+            <header class="logoSmall">RPS</header>
+                <img class="rpslogo" src="rps.jpg" alt="RPS logo">
+                
+                <ul class="links">
+                    <li><a href="index.html">Play</a></li>
+                    <li><a href ="Rules.html">Rules</a></li>
+                    <li><a href ="Trivia.html">Trivia</a></li>
+                </ul>
+                
+            <ul class="linksSmall">
+                <li><a href="index.html">Play</a></li>
+                <li><a href ="Rules.html">Rules</a></li>
+                <li><a href ="Trivia.html">Trivia</a></li>
+            </ul>
+
+        </nav>
+    </div>
+
+<body>
+    <div class="flex-container">
+    <div class ="welcomeBanner">
+            <h1 id="head">Welcome!</h1>
+     </div>
+    
+     <div class ="mobileWelcome">
+            <h2>Welcome!</h2>
+    </div>
+
+    <div class="mobileFoot">
+            <p>Please visit us on  a computer or tablet to play our version of Rock Paper, or Scissors</p>
+    </div>
+        
+    <div class ="introTitle">
+            <h2>What is this website?</h2>
+    </div>
+        
+    <article class="introText">
+            <p>This is a place where you can learn all about the game of Rock, Paper, or Scissors. Master the game by learning the indepth ruleset of the game
+                <a href ="rules.html">here.</a> Why not check out our trivia and lore page? Learn all about how this wonderful game came to be and where it
+            origininated <a href="trivia.html">here.</a> Feedback is very important, both positive and negative. Feel free to leave yours <a href="feedback.html">here.</a></p>
+    </article>
+
+        
+    <article class="gameText">
+            <h2 id="gameTitle">The Game</h2>
+            <p id ="gameP"> Once you feel ready to take on our unbeatable robot<a onclick="startGame();" href="#"> press me </a> to start the game! </p>
+                     <p id ="gameFooter">Consider turning the volume down/off on your device before playing if you are sensitive to sound</p>
+           
+    </article>
+
+        <section class="sidebar">
+            <img id ="scissorSlider" src ="scissorslide.png" alt="scissor image">
+            <img id = "paperSlider" src="paperslide.png" alt="paper image">
+            <img id="rockSlider" src="rockslide.png" alt="rock image">
+        </section>
+         
+        <div class ="game-container">
+            <div id ="game">
+                <h2 id="welcome">Get Ready...</h2>
+                <h2>  <span id ="computer-choice"></span></h2>
+                <h2> <span id ="user-choice"></span></h2>
+                <h2><span id ="result"></span></h2>
+            <p><span id="resultText"></span></p>
+            <button onclick="reStart()" id="restartButton">Restart</button>
+            
+            <img id ="rockSymbol" src="rock.png" alt=" Rock symbol">
+            <img id="paperSymbol" src ="paper.png" alt="Paper symbol">
+            <img id ="scissorsSymbol" src ="scissors.png" alt="Scissor symbol">
+
+            <img id ="rockSymbolC" src="rock.png" alt ="Rock symbol">
+            <img id="paperSymbolC" src ="paper.png" alt ="Paper symbol">
+            <img id ="scissorsSymbolC" src ="scissors.png" alt = Scissor symbol>
+
+            <h3 id= "vs">VS</h3>
+            <h3 id ="loading">Loading</h3>
+            <h3 id = "loadingdots">...</h3>
+            <img id="robotW" src="robotW.png" alt ="Robot happy after win ">
+            <img id="robotL" src="robotL.png" alt="Robot sad after loss">
+            <img id="robotTie" src="robotTie.png" alt = "Robot indifferent after tie">
+        
+        
+         
+            <button onclick="showRock()" id="rock">rock</button>
+            <button onclick = "showPaper()" id="paper">paper</button>
+            <button onclick = "showScissors()" id="scissors">scissors</button>
+        </div>
+         
+     </div>
+</div>
+
+<script src="js.js"></script>
+
+</body>
+
+<footer>
+    <p><a class="link" href="Feedback.html">Feedback</a></p>
+    <ul>
+        <li><a href = "https://www.linkedin.com/in/niklasaffenita/" target = "_blank">Linkedin</a></li>
+        <li id="email">Email: niklas@affenita.se</li>
+    </ul>
+</footer>
+</html>

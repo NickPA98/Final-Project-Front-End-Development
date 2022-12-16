@@ -1,0 +1,286 @@
+#game{
+    display:none;
+    border:5px solid black;
+    border-radius:20px;
+    width:700px;
+    height:500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color:white;
+}
+
+.gameText a:hover{
+    border:none;
+    color:indianred;
+}
+
+.flex-container{
+    display:flex;
+    margin:auto;
+    background-color:beige;
+    flex-direction:row;
+    width:90%;
+    border:5px solid black;
+    border-radius:20px;
+    position:relative;
+    bottom:-40px;
+    height:760px;
+}
+
+
+#scissors, #rock, #paper{
+  position:absolute;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  word-spacing:10px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition:0.3s;
+}
+
+#rock{
+    bottom:15px;
+    left:5px;
+}
+
+#paper{
+    bottom:15px;
+    left:90px;
+}
+
+#scissors{
+    bottom:15px;
+    left:185px;
+}
+
+#scissors:hover,#rock:hover,#paper:hover,#restartButton:hover{
+    background-color:brown;
+}
+
+#welcome{
+    text-align:center;
+    position:relative;
+    bottom:-85px;
+    font-family: 'Kenia', cursive;
+    font-size:40px;
+    animation-name:fadeOut;
+    animation-duration:2s;
+    animation-delay: 3s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+}
+
+@keyframes fadeOut{
+    0%{opacity:1}
+    100%{opacity:0}
+}
+
+#rockSymbol,#paperSymbol,#scissorsSymbol{
+    display:none;
+    opacity:0;
+    animation:Bounce 2s ease 2;
+    display:none;
+    width:100px;
+    position:absolute;
+    left:150px;
+    bottom:180px;
+}
+
+@keyframes Bounce{
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0); opacity:1}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+
+}
+
+#rockSymbolC,#paperSymbolC, #scissorsSymbolC{
+    display:none;
+    opacity:0;
+    animation:Bounce 2s ease 2;
+    width:100px;
+    position:absolute;
+    right:150px;
+    bottom:180px;
+}
+
+@keyframes Bounce{
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0); opacity:1}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+
+}
+
+#vs{
+    opacity:0;
+    font-family: 'Silkscreen', cursive;
+    position:absolute;
+    bottom:40%;
+    right:320px;
+    font-size:40px;
+    display:none;
+    animation:colorChange;
+    animation-duration:4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forward;
+    color:red;
+   
+}
+
+@keyframes colorChange{
+    from{color:black;opacity:0.5}
+    to{color:red; opacity:1};
+}
+
+#result{
+    position:absolute;
+    left:40%;
+    top:10%;
+    font-family: 'Kenia', cursive;
+    font-size:45px;
+}
+
+#resultText{
+    font-family: 'Kenia', cursive;
+    font-size:20px;
+    position:absolute;
+    left:35%;
+    top:22%;
+}
+
+#loading,#loadingdots{
+    font-family: 'Silkscreen', cursive;
+    position:absolute;
+    right:150px;
+    bottom:150px;
+    display:block;
+    animation:Loading;
+    animation-duration:1s;
+    animation-iteration-count:5;
+    animation-fill-mode:forwards;
+}
+
+#loadingdots{
+    right: 125px;
+    bottom:151px;
+}
+
+@keyframes Loading{
+    0%{opacity:0;}
+    50%{opacity:1}
+    100%{opacity:0}
+}
+
+#robotW,#robotL{
+    width:300px;
+    position:absolute;
+    right:40px;
+    bottom:0px;
+    display:none;
+    animation:Robot;
+    animation-duration:6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#robotTie{
+    width:300px;
+    position:absolute;
+    right:20px;
+    bottom:160px;
+    display:none;
+    animation:Robot;
+    animation-duration:6s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    
+}
+
+@keyframes Robot{
+    0%{opacity:0;}
+    50%{opacity:1;}
+    100%{opacity:0;}
+}
+
+@media(max-width:784px){
+    .game-container{display:none;}
+}
+
+
+#restartButton{
+  position:absolute;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  word-spacing:10px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition:0.3s;
+  top:15px;
+  right:30px;
+  
+}
+
+.gameText{
+    border:5px solid black;
+    border-radius:20px;
+    width:700px;
+    height:500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color:white;;
+}
+
+@media(max-width:784px){
+    .gameText{display:none;}
+}
+
+
+#gameTitle{
+    font-family: 'Kenia', cursive;
+    font-size:50px;
+    position:absolute;
+    top:20%;
+    left:37%;
+}
+
+#gameP{
+    font-family: 'Solway', serif;
+    font-size:17px;
+    text-align:center;
+    position:absolute;
+    top:37%;
+    left:29%;
+    
+    width:300px;
+}
+
+#gameFooter{
+    font-family: 'Solway', serif;
+    font-size:14px;
+    position:absolute;
+    bottom:5%;
+    left:1%
+}

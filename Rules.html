@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="trivia.css">
+    <link rel ="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="startpage.css">
+    <link rel="stylesheet" href="play.css">
+    <link rel="stylesheet" href="rules.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/35519e0007.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kenia&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Solway:wght@500&display=swap" rel="stylesheet">
+
+<div class = head>
+    <nav>
+        <label class="logo">Rock | Paper | Scissors</label>
+            <img class="rpslogoSmallLeft" src="rps.jpg" alt ="RPS logo">
+            <img class="rpslogoSmallRight" src="rps.jpg" alt ="RPS logo">
+        <header class="logoSmall">R  P  S</header>
+        <img class="rpslogo" src="rps.jpg" alt="RPS logo">
+        
+        <ul class="links">
+            <li><a href="index.html">Play</a></li>
+            <li><a href ="Rules.html">Rules</a></li>
+            <li><a href ="Trivia.html">Trivia</a></li>
+        </ul>
+        
+        <ul class="linksSmall">
+            <li><a href="index.html">Play</a></li>
+            <li><a href ="Rules.html">Rules</a></li>
+            <li><a href ="Trivia.html">Trivia</a></li>
+            
+        </ul>
+    </nav>
+</div>
+
+<body>
+    <div class="flex-container">
+        <div class="headerRules">
+            <h1>Rules and Strategy</h1>
+        </div>
+        
+        <div class="rules">
+            <h2 id="title">The Rules</h2>
+            <p id="ruleText">Rock wins against scissors; paper wins against rock; and scissors wins against paper.
+                 If both players throw the same hand signal, it is considered a tie.</p>
+            <img id ="rules" src ="rpsRules.jpg">
+        </div>
+                 
+        <div class="strategy">
+            <h2 id="strategyTitle">Strategy</h2>
+            <p>
+                If you lose the first round, switch to the thing that beats the thing your opponent just played.
+                 If you win, don't keep playing the same thing, but instead switch to the thing 
+                 that would beat the thing that you just played. In other words, play the hand your losing opponent just played. <!--CREDIT: https://arstechnica.com/science/2014/05/win-at-rock-paper-scissors-by-knowing-thy-opponent/#:~:text=Therefore%2C%20this%20is%20the%20best,thing%20that%20you%20just%20played.-->
+            </p>
+            <h2 id="liveActionTitle">Live Action</h2>
+                <img id="gif" src="rpsgif.gif" alt="Gif of two hand playing rock paper scissors">
+                <img id="live" src="live.gif" alt="Gif symbolizing a live event">
+        </div>
+
+        <div class="rulesSmall">
+            <h2 id="rulesSmall">The Rules</h2>
+            <p id="ruleText">Rock wins against scissors; paper wins against rock; and scissors wins against paper.
+                If both players throw the same hand signal, it is considered a tie.</p>
+           
+        </div>
+        
+        <img id="rulespic" src="rpsRules.jpg">
+        
+        <div class="strategySmall">
+            <h2 id="strategyTitleSmall">Strategy</h2>
+            <p>
+                If you lose the first round, switch to the thing that beats the thing your opponent just played.
+                 If you win, don't keep playing the same thing, but instead switch to the thing 
+                 that would beat the thing that you just played. In other words, play the hand your losing opponent just played. <!--CREDIT: https://arstechnica.com/science/2014/05/win-at-rock-paper-scissors-by-knowing-thy-opponent/#:~:text=Therefore%2C%20this%20is%20the%20best,thing%20that%20you%20just%20played.-->
+            </p>
+            
+        </div>
+        <div class="liveActionBox">
+            <img id="actionGif" src="rpsgif.gif">
+            <img id ="live" src ="live.gif"></img>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <p><a class="link" href="Feedback.html">Feedback</a></p>
+    <ul>
+        <li><a href = "https://www.linkedin.com/in/niklasaffenita/" target = "_blank">Linkedin</a></li>
+        <li id="email">Email: niklas@affenita.se</li>
+    </ul>
+</footer>
+</html>
